@@ -37,6 +37,7 @@ const WeatherItem = styled.div`
 const WeatherInformations5Days = ({ weather5Days }) => {
   const dailyForecast = {};
 
+  console.log(weather5Days);
   for (let forecast of weather5Days.list) {
     const date = new Date(forecast.dt * 1000).toLocaleDateString();
 
@@ -46,7 +47,7 @@ const WeatherInformations5Days = ({ weather5Days }) => {
   }
 
   const next5DaysForecast = Object.values(dailyForecast).slice(1, 6);
-
+  console.log(next5DaysForecast);
   function converDate(date) {
     const newDate = new Date(date.dt * 1000).toLocaleDateString("pt-BR", {
       weekday: "long",
