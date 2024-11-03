@@ -7,8 +7,9 @@
 }
 
 body {
+  height: 100vh;
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(to right, #00b4db, #0083b0);
+  background: linear-gradient(20deg, #e0f7fa, #81d4fa, #1565c0);
   color: #333;
   line-height: 1.6;
 }
